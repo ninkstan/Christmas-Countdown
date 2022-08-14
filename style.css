@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url(./xmas-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    margin: 10rem auto;
+    justify-content: center;
+    width: fit-content;
+    background-color: rgba(13, 112, 43, 0.4);
+    padding: 0.1rem 4rem;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+.timer {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.timer div {
+    width: 6rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.8rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.timer div::after{
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: grid;
+}
+
+.day::after {
+    content: 'days';
+}
+.hour::after {
+    content: 'hours';
+}
+.min::after {
+    content: 'minutes';
+}
+.sec::after {
+    content: 'seconds';
+}
+
+.snowflake {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    filter: blur(0.1rem);
+}
